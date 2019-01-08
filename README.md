@@ -10,6 +10,16 @@ composer global require statamic/cli
 
 Make sure to place the `$HOME/.composer/vendor/bin` directory (or the equivalent directory for your OS) in your `$PATH` so that the `statamic` executable can be located by your system.
 
+Wether you use .bashrc or .zshrc (open the file) add the following line:
+```
+export PATH="$PATH:~/.composer/vendor/bin"
+```
+Save and exit the file. Now reload the source.
+
+```
+source ~/.bashrc
+```
+
 Once installed, you should be able to run `statamic {command name}` from within any directory.
 
 
